@@ -4,8 +4,18 @@ import { useState } from "react"
 
 export const Navbar = () => {
     const [dark, setDark] = useState(false);
+    let lastScroltop = window.scrollY;
+    window.onscroll = function(){
+        let pos = window.scrollY;
+        if(lastScroltop < window.scrollY){
+            document.getElementById("nav").style.transform = "translateY(-95px)";
+        }else{
+            document.getElementById("nav").style.transform = "";
+        }
+        lastScroltop = window.scrollY;
+    }
     return (
-        <div className="navbar fixed w-[100%] z-[100]">
+        <div className="navbar fixed w-[100%] z-[100]" id="nav">
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">

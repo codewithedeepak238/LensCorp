@@ -10,6 +10,20 @@
   --tw-gradient-stops: var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gr-4, linear-gradient(54deg, #0091ff 0, #9cfeff 100%));
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +32,11 @@
 
 body {
   position: relative;
+  scrollbar-color: rebeccapurple green;
 }
-
+.navbar{
+  transition: all 500ms ease-in-out;
+}
 .navbar li {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;

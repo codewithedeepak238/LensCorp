@@ -17,7 +17,7 @@ export const Animation = () => {
                 <button className="button-1 mt-[8%] px-[4%] py-[2%] font-[500] hover:px-[5%] hover:bg-white hover:text-black border-[1px] border-white bg-transparent text-white text-[18px] rounded-[9px] flex justify-center items-center gap-[15px]">Learn More <i class="fa-solid fa-arrow-right text-[12px] hidden arrow"></i></button>
             </div>
             <div className="w-[33%] mt-[4rem] flex justify-end">
-                <video autoPlay loop className="video-box">
+                <video autoPlay muted loop className="video-box">
                     <source src="https://res.cloudinary.com/detwrhe0k/video/upload/v1691730954/lenscorp-website/product-intro_1_dmajx1_qaemeu.mp4" type="video/mp4"/>
                 </video>
             </div>
